@@ -1,0 +1,17 @@
+CREATE TABLE pet (
+    id INT NOT NULL AUTO_INCREMENT, 
+    name VARCHAR(20),
+    owner VARCHAR(20),
+    species VARCHAR(20),
+    PRIMARY KEY(id)    
+    );
+
+    INSERT INTO `pet`(name, owner, species) VALUES ('Rover', 'Chad', 'Lab');
+    INSERT INTO `pet`(name, owner, species) VALUES ('Ollie', 'Ken', 'Cocker Spaniel');
+
+    UPDATE pet
+    SET name = 'Shadow';
+
+    UPDATE pet
+    SET name = 'Ollie'
+    WHERE id = 2;
